@@ -24,17 +24,17 @@ class ViewController: UIViewController {
     }
 
     @IBAction func setupRedValue(_ sender: UISlider) {
-        valueRed.text = sliderRed.value.formatted()
+        valueRed.text = String(format: "%0.2f", sliderRed.value)
         viewMain.backgroundColor = UIColor(red: CGFloat(sliderRed.value), green: CGFloat(sliderGreen.value), blue: CGFloat(sliderBlue.value), alpha: 1)
     }
     
     @IBAction func setupGreenValue(_ sender: UISlider) {
-        valueGreen.text = sliderGreen.value.formatted()
+        valueGreen.text = String(format: "%0.2f", sliderGreen.value)
         viewMain.backgroundColor = UIColor(red: CGFloat(sliderRed.value), green: CGFloat(sliderGreen.value), blue: CGFloat(sliderBlue.value), alpha: 1)
     }
     
     @IBAction func setupBlueValue(_ sender: UISlider) {
-        valueBlue.text = sliderBlue.value.formatted()
+        valueBlue.text = String(format: "%0.2f", sliderBlue.value)
         viewMain.backgroundColor = UIColor(red: CGFloat(sliderRed.value), green: CGFloat(sliderGreen.value), blue: CGFloat(sliderBlue.value), alpha: 1)
     }
 }
