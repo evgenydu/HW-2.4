@@ -7,7 +7,9 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class SettingsViewController: UIViewController {
+    
+    var settingsColor: UIColor!
     
     @IBOutlet var viewMain: UIView!
     @IBOutlet var valueRed: UILabel!
@@ -17,8 +19,6 @@ class ViewController: UIViewController {
     @IBOutlet var sliderRed: UISlider!
     @IBOutlet var sliderGreen: UISlider!
     @IBOutlet var sliderBlue: UISlider!
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,7 +36,11 @@ class ViewController: UIViewController {
             valueGreen.text = string(from: sender)
         default:
             valueBlue.text = string(from: sender)
-        }
+            }
+    }
+    
+    @IBAction func closeSetting(_ sender: UIButton) {
+        dismiss(animated: true)
     }
     
     private func setColor() {
