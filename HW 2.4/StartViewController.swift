@@ -5,11 +5,6 @@
 //  Created by Евгений Д on 12.10.2022.
 //
 
-
-
-// Алексей, скажи пожалуйста какие лекции пересмотреть что бы понять, как сделать это задание?
-// За 8 часов я не смог разобраться как передать и раздербанить цвет. Это расстраивает. Я не понимаю чего я не понимаю.
-
 import UIKit
 
 class StartViewController: UIViewController {
@@ -22,6 +17,7 @@ class StartViewController: UIViewController {
         guard let settingsVC = segue.destination as? SettingsViewController else { return }
         settingsVC.settingsColor = view.backgroundColor
     }
+    
 }
 
 
